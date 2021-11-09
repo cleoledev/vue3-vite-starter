@@ -9,5 +9,12 @@ export default defineConfig({
     alias: {
       '@': resolve(__dirname, 'src')
     }
+  },
+  css: {
+    postcss: {
+      plugins: [
+        require('autoprefixer')({ grid: 'autoplace' })
+      ]
+    }
   }
 })
