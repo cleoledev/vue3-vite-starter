@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint:style": "stylelint \"src/**/*.{css,scss,sass,vue}\" --fix"
   },
   "dependencies": {
     "vue": "^3.2.16"
@@ -21,23 +22,16 @@
     "sass": "^1.43.4",
     "stylelint": "^14.0.1",
     "stylelint-config-recess-order": "^2.5.0",
-    "stylelint-config-recommended-scss": "^5.0.1",
     "stylelint-config-recommended-vue": "^1.0.0",
+    "stylelint-config-standard-scss": "^2.0.1",
     "vite": "^2.6.4"
   },
   "eslintConfig": {
-    "root": true,
     "extends": [
       "./config/lint/eslint.js"
     ]
   },
   "stylelint": {
-    "extends": "./config/lint/stylelint.js",
-    "ignoreFiles": [
-      ".vscode/**",
-      "dist/**",
-      "node_modules/**",
-      "**/*.js"
-    ]
+    "extends": "./config/lint/stylelint.js"
   }
 }
