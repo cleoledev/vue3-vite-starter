@@ -34,5 +34,10 @@
   },
   "stylelint": {
     "extends": "./config/lint/stylelint.js"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "ie >= 11"
+  ]
 }
