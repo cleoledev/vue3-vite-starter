@@ -3,7 +3,8 @@ module.exports = {
   env: {
     browser: true,
     es2020: true,
-    node: true
+    node: true,
+    'vue/setup-compiler-macros': true
   },
   extends: [
     'plugin:vue/vue3-recommended',
@@ -17,5 +18,6 @@ module.exports = {
     'vue'
   ],
   rules: {
+    'vue/script-setup-uses-vars': 'error'
   }
 }
