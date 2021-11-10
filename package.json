@@ -1,6 +1,6 @@
 {
-  "name": "kad-generator",
-  "version": "0.0.0",
+  "name": "vue3-vite-legacy-starter",
+  "version": "0.1.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
